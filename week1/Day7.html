@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .media {
+            margin-top: 30px;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        form {
+            max-width: 500px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Title and Heading -->
+    <h1>Welcome to My Web Page!</h1>
+    
+    <!-- List of Favorite Websites with Logos -->
+    <h2>My Favorite Websites</h2>
+    <ul>
+        <li>
+            <a href="https://www.google.com" target="_blank">
+                <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google Logo" width="50">
+                Google
+            </a>
+        </li>
+        <li>
+            <a href="https://www.wikipedia.org" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Wikipedia-logo.png" alt="Wikipedia Logo" width="50">
+                Wikipedia
+            </a>
+        </li>
+        <li>
+            <a href="https://stackoverflow.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Stack_Overflow_icon.svg" alt="Stack Overflow Logo" width="50">
+                Stack Overflow
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com" target="_blank">
+                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" width="50">
+                GitHub
+            </a>
+        </li>
+        <li>
+            <a href="https://medium.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Medium_logo_Monogram.svg" alt="Medium Logo" width="50">
+                Medium
+            </a>
+        </li>
+    </ul>
+
+    <!-- Image Gallery -->
+    <h2>Image Gallery</h2>
+    <div class="gallery">
+        <img src=image1.jpg.jpg alt="Image 1">
+        <img src="image2.jpg.jpg" alt="Image 2">
+        <img src="image3.jpg.jpg" alt="Image 3">
+        <img src="image4.jpg.jpg" alt="Image 4">
+        <img src="image5.jpg.jpg" alt="Image 5">
+        <img src="image6.jpg.jpg" alt="Image 6">
+    </div>
+
+    <!-- Audio and Video Elements -->
+    <div class="media">
+        <h2>Listen to Some Music</h2>
+        <audio controls>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <h2>Watch a Video</h2>
+        <video width="320" height="240" controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+    </div>
+
+    <!-- Schedule Table -->
+    <h2>Weekly Schedule</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>Time</th>
+                <th>Activity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Monday</td>
+                <td>9:00 AM - 10:00 AM</td>
+                <td>Team Meeting</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>11:00 AM - 12:00 PM</td>
+                <td>Project Work</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>2:00 PM - 3:00 PM</td>
+                <td>Client Call</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>10:00 AM - 11:00 AM</td>
+                <td>Code Review</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>1:00 PM - 2:00 PM</td>
+                <td>Weekly Report</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Contact Form -->
+    <h2>Contact Us</h2>
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
