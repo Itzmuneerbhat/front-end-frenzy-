@@ -1,0 +1,50 @@
+/* Body styling */
+body {
+    background-color: #f0f8ff; /* Light blue background */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Default text color */
+}
+
+/* Header styling */
+header {
+    background-color: #4682b4; /* Steel blue background for header */
+    color: #ffffff; /* White text */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Content section styling */
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Various text colors */
+.highlight {
+    color: #ff4500; /* Orange-red for highlighted text */
+    font-weight: bold;
+}
+
+.info {
+    color: #2e8b57; /* Sea green for informational text */
+    font-style: italic;
+}
+
+.warning {
+    color: #ff6347; /* Tomato color for warning text */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Footer styling */
+footer {
+    background-color: #4682b4; /* Same steel blue background as header */
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
