@@ -1,0 +1,85 @@
+/* Body styling */
+body {
+    background-color: #f0f8ff; /* Light blue background */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Default text color */
+}
+
+/* Header styling */
+header {
+    background-color: #4682b4; /* Steel blue background for header */
+    color: #ffffff; /* White text */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Main heading style */
+.main-heading {
+    font-family: 'Georgia', serif;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: #4b0082; /* Indigo color */
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+/* Subheading style */
+.sub-heading {
+    font-family: 'Verdana', sans-serif;
+    font-size: 28px;
+    font-style: italic;
+    color: #008080; /* Teal color */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Content section styling */
+.content {
+    padding: 20px;
+    text-align: left; /* Default alignment for content */
+}
+
+/* Various text colors and styles */
+.highlight {
+    font-family: 'Courier New', monospace;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff4500; /* Orange-red */
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.info {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: #2e8b57; /* Sea green */
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.warning {
+    font-family: 'Impact', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff6347; /* Tomato color */
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #4682b4; /* Same steel blue background as header */
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
