@@ -1,0 +1,38 @@
+.box {
+    width: 200px; 
+    text-align: center;
+    margin: 0 auto; 
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.box1 {
+    padding: 10px; 
+    border: 1px solid #4682b4; 
+    margin: 10px;
+    background-color: #f0f8ff; 
+}
+
+
+.box2 {
+    padding: 20px; 
+    border: 3px solid #ff4500;
+    margin: 20px;
+    background-color: #ffe4c4; 
+}
+
+
+.box3 {
+    padding: 30px; 
+    border: 4px dotted #2e8b57; 
+    margin: 30px; 
+    background-color: #fafad2; 
+}
+
+
+.box4 {
+    padding: 40px; 
+    border: 5px double #4b0082; 
+    margin: 40px; 
+    background-color: #e6e6fa; 
+}
