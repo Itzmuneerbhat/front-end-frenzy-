@@ -1,0 +1,75 @@
+/* Basic styling for the overall page */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Grid container styling for larger screens */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* Two columns: sidebar and main content */
+    grid-template-rows: auto 1fr auto; /* Three rows: header, main area, footer */
+    gap: 10px; /* Spacing between grid items */
+    height: 100vh; /* Full viewport height */
+}
+
+/* Grid item styling */
+.header {
+    grid-column: 1 / 3; /* Spans across both columns */
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.sidebar {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.main-content {
+    background-color: #eaeaea;
+    padding: 20px;
+}
+
+.footer {
+    grid-column: 1 / 3; /* Spans across both columns */
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Media query for smaller screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr; /* Single column layout */
+        grid-template-rows: auto auto 1fr auto; /* Adjust rows */
+    }
+
+    .header,
+    .footer {
+        grid-column: 1; /* Only spans the single column */
+    }
+
+    .sidebar {
+        grid-row: 2; /* Sidebar appears below the header */
+    }
+
+    .main-content {
+        grid-row: 3; /* Main content appears below the sidebar */
+    }
+}
+
+/* Media query for very small screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .header,
+    .footer {
+        font-size: 14px; /* Smaller text size for very small screens */
+    }
+
+    .sidebar,
+    .main-content {
+        padding: 10px; /* Reduced padding for small screens */
+    }
+}
