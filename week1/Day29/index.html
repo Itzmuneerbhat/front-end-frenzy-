@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Interactive Web Page</h1>
+        <button id="toggle-form-button">Show/Hide Form</button>
+
+        <div id="form-section" class="hidden">
+            <h2>Add Item to the List</h2>
+            <form id="item-form">
+                <div class="form-group">
+                    <label for="item-name">Item Name:</label>
+                    <input type="text" id="item-name" placeholder="Enter item name">
+                    <span class="error-message" id="item-error"></span>
+                </div>
+                <button type="submit">Add Item</button>
+            </form>
+        </div>
+
+        <div class="content">
+            <h2>Dynamic List of Items</h2>
+            <ul id="item-list"></ul>
+        </div>
+
+        <div class="update-section">
+            <h2>Update the Dynamic Text Section</h2>
+            <form id="update-text-form">
+                <div class="form-group">
+                    <label for="dynamic-text">New Dynamic Text:</label>
+                    <input type="text" id="dynamic-text" placeholder="Enter text">
+                    <span class="error-message" id="text-error"></span>
+                </div>
+                <button type="submit">Update Text</button>
+            </form>
+            <p id="dynamic-text-display">This is the dynamic text that will be updated.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
